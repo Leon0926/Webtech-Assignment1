@@ -1,0 +1,37 @@
+html{
+    height: 100%;
+}
+#inImage{
+    width: 50px;
+}
+#webImage{
+    width: 50px;
+}
+.mainText{
+    color: #4B7171;
+    font: bold;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #F0E1D0;
+    font-family: 'Raleway', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 4fr 2fr;
+}
+aside{
+    grid-column: 1/2;
+    grid-row: 1/5;
+    background-color: #F9F3EC;
+}
+h1{
+    grid-column: 2/2;
+}
+#linkNav{
+    grid-column: 2/2;
+}
+footer{
+    grid-column: 2/2;
+    grid-row: 4/4;
+}
