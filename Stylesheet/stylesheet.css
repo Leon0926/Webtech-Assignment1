@@ -58,10 +58,15 @@ h2{
     flex-direction: column;
 }
 #noteArea{
-    max-width: 95%;
-    border: 10px, #5394A0;
-    
+    margin: 20px;
+    border: 3px solid #5394A0;
+    border-radius: 3px;
+    line-height: 1.5;
+    background-color: #F0E1D0;
+    padding: 15px;
+    font-size: large;
 }
+
 section button{
     border: 0;
     line-height: 2.5;
