@@ -10,6 +10,7 @@ html{
 .mainText{
     color: #4B7171;
     font-weight: bold;
+    margin-top: 20px;
 }
 body{
     width: 100%;
@@ -18,7 +19,7 @@ body{
     font-family: 'Raleway', sans-serif;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-rows: 1fr 0.5fr 4fr 1fr;
     margin: 0;
 }
 aside{
@@ -68,9 +69,16 @@ section button{
     color: white;
     border-radius: 10px;
     height: 45px;
-    margin: 10px;
+    margin: 15px;
 }
 .aboveTextButtons{
+    display: flex;
+    justify-content: space-between;
+
+}
+.belowTextButtons{
+    display: flex;
+    justify-content: right;
 
 }
 #newNote{
@@ -78,12 +86,14 @@ section button{
 }
 #darkTheme{
     background-color: #6F6A87;
+    margin-right: 30px;
 }
 #save{
     background-color: #5394A0;
 }
 #cancel{
     background-color: #D9827C;
+    margin-right: 30px;
 }
 footer{
     grid-column: 2/2;
