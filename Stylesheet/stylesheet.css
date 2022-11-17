@@ -52,7 +52,39 @@ h2{
 #asideNavList{
     list-style: square;
 }
+.inputAndButtons{
+    display: flex;
+    flex-direction: column;
+}
+#noteArea{
+    max-width: 95%;
+    border: 10px, #5394A0;
+    
+}
+section button{
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    color: white;
+    border-radius: 10px;
+    height: 45px;
+    margin: 10px;
+}
+.aboveTextButtons{
 
+}
+#newNote{
+    background-color: #5394A0;
+}
+#darkTheme{
+    background-color: #6F6A87;
+}
+#save{
+    background-color: #5394A0;
+}
+#cancel{
+    background-color: #D9827C;
+}
 footer{
     grid-column: 2/2;
     grid-row: 4/4;

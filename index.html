@@ -28,11 +28,17 @@
         </nav>
     </aside>
     <section class="inputAndButtons">
-        <button type="button">New Note</button>
-        <button type="button">Dark Theme</button>
-        <textarea name="note" id="noteArea" cols="145" rows="15"></textarea>
-        <button type="button">Save</button>
-        <button type="button">Cancel</button>
+        <div>
+            <button type="button" class="aboveTextButtons" id="newNote">New Note</button>
+            <button type="button" class="aboveTextButtons" id="darkTheme">Dark Theme</button>
+        </div>
+        <textarea name="note" id="noteArea" cols="" rows="15" placeholder="This is a placeholder">
+            
+        </textarea>
+        <div>
+            <button type="button" class="belowTextButtons" id="save">Save</button>
+            <button type="button" class="belowTextButtons" id="cancel">Cancel</button>
+        </div>
     </section>
     <footer class="mainText">
         Keep in Touch
