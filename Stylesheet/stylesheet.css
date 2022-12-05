@@ -87,6 +87,11 @@ section button{
     justify-content: right;
 
 }
+.imageButtons{
+    background: none;
+    border: none;
+    padding: 0;
+}
 #newNote{
     background-color: #5394A0;
 }
