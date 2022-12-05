@@ -1,3 +1,10 @@
+const notesArray = 
+{
+    title:"note one",
+    body:"this is my first note"
+};
+
+
 function clickDarkTheme()
 {
     document.body.classList.toggle("darkMode")
