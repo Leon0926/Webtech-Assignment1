@@ -1,8 +1,9 @@
-const notesArray = 
+const notesArray = [
 {
     title:"note one",
     body:"this is my first note"
-};
+}
+];
 
 
 function clickDarkTheme()
@@ -37,3 +38,17 @@ function clickNewNote()
 }
 
 newNote.addEventListener("click", clickNewNote,)
+
+function clickSave()
+{
+    noteName = prompt('Please enter desired note name: ')
+    notesArray.push({title:noteName, body:document.getElementById("noteArea").value})
+    console.log(notesArray)
+
+    var asideNavList = document.getElementById('asideNavList')
+    var newNote = document.createElement('li');
+    newNote.appendChild(document.createTextNode(noteName))
+    asideNavList.appendChild(newNote)
+}
+
+save.addEventListener("click", clickSave)
