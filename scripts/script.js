@@ -43,12 +43,26 @@ function clickSave()
 {
     noteName = prompt('Please enter desired note name: ')
     notesArray.push({title:noteName, body:document.getElementById("noteArea").value})
-    console.log(notesArray)
 
     var asideNavList = document.getElementById('asideNavList')
-    var newNote = document.createElement('li');
-    newNote.appendChild(document.createTextNode(noteName))
+    var newNote = document.createElement('li')
+    var buttonInList = document.createElement('button')
+    buttonInList.appendChild(document.createTextNode(noteName))
+    newNote.appendChild(buttonInList)
     asideNavList.appendChild(newNote)
 }
 
 save.addEventListener("click", clickSave)
+
+function clickAsideNote(clicked)
+{
+    for (let i = 0; i < notesArray.length; i++) {
+        if(notesArray[i].title == (clicked.target.innerText)){
+            console.log('ok')
+            document.getElementById('noteArea').value = notesArray[i].body
+            
+        }
+    }
+}
+
+asideNavList.addEventListener("click",clickAsideNote)
