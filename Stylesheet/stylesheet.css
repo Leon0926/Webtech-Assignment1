@@ -54,6 +54,15 @@ h2{
 #asideNavList{
     list-style: square;
 }
+
+li button{
+    background: none;
+    border: none;
+    padding: 0;
+    color: #4B7171;
+    font-size: medium;
+    font-family: 'Raleway', sans-serif;
+}
 .inputAndButtons{
     display: flex;
     flex-direction: column;
@@ -87,6 +96,11 @@ section button{
     justify-content: right;
 
 }
+.imageButtons{
+    background: none;
+    border: none;
+    padding: 0;
+}
 #newNote{
     background-color: #5394A0;
 }
@@ -96,6 +110,7 @@ section button{
 }
 #save{
     background-color: #5394A0;
+
 }
 #cancel{
     background-color: #D9827C;
@@ -111,6 +126,12 @@ footer{
 }
 footer div{
     margin-top: 20px;
+}
+.darkMode{
+    background-color: black;
+    
+    filter: invert(90%);
+    color: white;
 }
 
 @media screen and (max-width: 500px) {
